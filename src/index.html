@@ -8,104 +8,192 @@
     <script defer src="./index.js"></script>
   </head>
   <body>
-    <main>
+    <main class="content">
       <h1 class="visually-hidden">Проекты и услуги</h1>
-      <section>
-        <span>03 / Проекты</span>
-        <h2>Выполненные проекты</h2>
-        <article class="project-card">
-          <img class="project-card__image" src="" alt="" />
-          <span class="project-card__location">г. Санкт-Петербург</span>
-          <span class="project-card__title">Монтаж кровли в БЦ “Луч”</span>
-        </article>
-        <article class="project-card">
-          <img class="project-card__image" src="" alt="" />
-          <span class="project-card__location">г. Сочи</span>
-          <span class="project-card__title">Реконструкция летнего театра</span>
-        </article>
-        <article class="project-card">
-          <img class="project-card__image" src="" alt="" />
-          <span class="project-card__location">г. Сочи</span>
-          <span class="project-card__title">Реконструкция летнего театра</span>
-        </article>
-        <article class="project-card">
-          <img class="project-card__image" src="" alt="" />
-          <span class="project-card__location">г. Санкт-Петербург</span>
-          <span class="project-card__title">Монтаж кровли в БЦ “Луч”</span>
-        </article>
-        <ul class="pagination">
-          <a class="pagination__control pagination__control--prev">Назад</a>
-          <a class="pagination__item pagination__item--active" href="#">1</a>
-          <a class="pagination__item" href="#">2</a>
-          <a class="pagination__item" href="#">3</a>
-          <a class="pagination__control pagination__control--next">Вперед</a>
-        </ul>
+      <section class="section section--accent grow">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-info__number">03 / Проекты</span>
+            <h2 class="section-info__title">Выполненные проекты</h2>
+          </header>
+          <ul class="project-cards">
+            <li class="project-card">
+              <img
+                class="project-card__image"
+                src="./assets/images/roof.jpg"
+                alt="Кровля"
+              />
+              <span class="project-card__location">г. Санкт-Петербург</span>
+              <span class="project-card__title">Монтаж кровли в БЦ “Луч”</span>
+            </li>
+            <li class="project-card">
+              <img
+                class="project-card__image"
+                src="./assets/images/theater.jpg"
+                alt="Театр"
+              />
+              <span class="project-card__location">г. Сочи</span>
+              <span class="project-card__title"
+                >Реконструкция летнего театра</span
+              >
+            </li>
+            <li class="project-card">
+              <img
+                class="project-card__image"
+                src="./assets/images/theater.jpg"
+                alt="Театр"
+              />
+              <span class="project-card__location">г. Сочи</span>
+              <span class="project-card__title"
+                >Реконструкция летнего театра</span
+              >
+            </li>
+            <li class="project-card">
+              <img
+                class="project-card__image"
+                src="./assets/images/roof.jpg"
+                alt="Кровля"
+              />
+              <span class="project-card__location">г. Санкт-Петербург</span>
+              <span class="project-card__title">Монтаж кровли в БЦ “Луч”</span>
+            </li>
+          </ul>
+          <ul class="pagination">
+            <a class="pagination__control pagination__control--prev"
+              ><svg
+                width="36"
+                height="29"
+                viewBox="0 0 36 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.5 14.5001H33M33 14.5001L21.0976 2.59766M33 14.5001L21.0976 26.4025"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+              Назад</a
+            >
+            <a class="pagination__item pagination__item--active" href="#">1</a>
+            <a class="pagination__item" href="#">2</a>
+            <a class="pagination__item" href="#">3</a>
+            <a class="pagination__control pagination__control--next" href="#"
+              ><svg
+                width="36"
+                height="29"
+                viewBox="0 0 36 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.5 14.5001H33M33 14.5001L21.0976 2.59766M33 14.5001L21.0976 26.4025"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+              Вперед</a
+            >
+          </ul>
+        </div>
       </section>
-      <section>
-        <span>04 / Услуги</span>
-        <h2>Выполняем следующие работы</h2>
+      <section class="container">
+        <header class="section-header">
+          <span class="section-info__number section-info__number--dark"
+            >04 / Услуги</span
+          >
+          <h2 class="section-info__title section-info__title--dark">
+            Выполняем следующие работы
+          </h2>
+        </header>
         <ol class="services">
           <li class="accordion">
-            <h3 class="accordion__title">Проектирование</h3>
-            <button class="accordion__button">Скрыть/раскрыть</button>
-            <p class="accordion__description">
+            <div class="accordion__header">
+              <span class="accordion__number">01</span>
+              <h3 class="accordion__title">Проектирование</h3>
+              <button class="accordion__button" />
+            </div>
+            <p class="accordion__content evolventa">
               Создаем конструктивные и архитектурные решения для коммерческих,
               административных и жилых сооружений.
             </p>
           </li>
           <li class="accordion">
-            <h3 class="accordion__title">Реконструкция старого фонда</h3>
-            <button class="accordion__button">Скрыть/раскрыть</button>
-            <p class="accordion__description">
+            <div class="accordion__header">
+              <span class="accordion__number">02</span>
+              <h3 class="accordion__title">Реконструкция старого фонда</h3>
+              <button class="accordion__button" />
+            </div>
+            <p class="accordion__content">
               Создаем конструктивные и архитектурные решения для коммерческих,
               административных и жилых сооружений.
             </p>
           </li>
           <li class="accordion">
-            <h3 class="accordion__title">Устройство кровель</h3>
-            <button class="accordion__button">Скрыть/раскрыть</button>
-            <p class="accordion__description">
+            <div class="accordion__header">
+              <span class="accordion__number">03</span>
+              <h3 class="accordion__title">Устройство кровель</h3>
+              <button class="accordion__button" />
+            </div>
+            <p class="accordion__content">
               Создаем конструктивные и архитектурные решения для коммерческих,
               административных и жилых сооружений.
             </p>
           </li>
           <li class="accordion">
-            <h3 class="accordion__title">Отделочные работы</h3>
-            <button class="accordion__button">Скрыть/раскрыть</button>
-            <p class="accordion__description">
+            <div class="accordion__header">
+              <span class="accordion__number">04</span>
+              <h3 class="accordion__title">Отделочные работы</h3>
+              <button class="accordion__button" />
+            </div>
+            <p class="accordion__content">
               Создаем конструктивные и архитектурные решения для коммерческих,
               административных и жилых сооружений.
             </p>
           </li>
           <li class="accordion">
-            <h3 class="accordion__title">
-              Изготовление и монтаж металлоконструкций
-            </h3>
-            <button class="accordion__button">Скрыть/раскрыть</button>
-            <p class="accordion__description">
+            <div class="accordion__header">
+              <span class="accordion__number">05</span>
+              <h3 class="accordion__title">
+                Изготовление и монтаж металлоконструкций
+              </h3>
+              <button class="accordion__button" />
+            </div>
+            <p class="accordion__content">
               Создаем конструктивные и архитектурные решения для коммерческих,
               административных и жилых сооружений.
             </p>
           </li>
           <li class="accordion">
-            <h3 class="accordion__title">
-              Работы с фундаментом и каркасом зданий
-            </h3>
-            <button class="accordion__button">Скрыть/раскрыть</button>
-            <p class="accordion__description">
+            <div class="accordion__header">
+              <span class="accordion__number">06</span>
+              <h3 class="accordion__title">
+                Работы с фундаментом и каркасом зданий
+              </h3>
+              <button class="accordion__button" />
+            </div>
+            <p class="accordion__content">
               Создаем конструктивные и архитектурные решения для коммерческих,
               административных и жилых сооружений.
             </p>
           </li>
         </ol>
-        <article class="services-info">
-          <img class="services-info__image" src="" alt="" />
-          <span class="services-info__location">г. Краснодар</span>
-          <span class="services-info__location"
-            >Проектирование торгового центра</span
-          >
+        <div class="services-info hidden">
+          <article class="project-card project-card--dark">
+            <img
+              class="project-card__image"
+              src="./assets/images/mall.jpg"
+              alt="Строящийся торговый центр"
+            />
+            <span class="project-card__location">г. Краснодар</span>
+            <span class="project-card__title"
+              >Проектирование торгового центра</span
+            >
+          </article>
           <a class="services-info__order-button" href="#">Заказать услугу</a>
-        </article>
+        </div>
       </section>
     </main>
   </body>
