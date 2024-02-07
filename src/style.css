@@ -228,10 +228,6 @@ a {
   max-width: 1920px;
 }
 
-.evolventa {
-  font-family: Evolventa, Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* section */
 
 section {
@@ -402,7 +398,7 @@ section.grow {
     font-size: 0;
     width: 36px;
   }
-  .pagination__control:not([href]) {
+  .pagination__control a:not([href]) {
     color: var(--color-white-30-opacity);
     pointer-events: none;
   }
@@ -468,7 +464,6 @@ section.grow {
     }
     .accordion__button {
       flex-shrink: 0;
-      font-size: 0;
       width: 40px;
       height: 40px;
       margin-left: auto;
@@ -481,6 +476,7 @@ section.grow {
     }
   }
   .accordion__content {
+    font-family: Evolventa, Verdana, Geneva, Tahoma, sans-serif;
     color: var(--color-black-70-opacity);
     font-size: 14px;
     font-weight: 400;
